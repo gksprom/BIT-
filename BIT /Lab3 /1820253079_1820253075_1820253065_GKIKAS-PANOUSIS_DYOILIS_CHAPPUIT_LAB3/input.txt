@@ -1,0 +1,13 @@
+#include <stdio.h>
+typedef struct {
+int x;
+float y;
+} Point;
+void printPoint(Point p) {
+printf("Point: (%d, %.2f)", p.x, p.y);
+}
+int main() {
+Point p1 = {10, 20.5};
+printPoint(p1);
+return 0;
+}
